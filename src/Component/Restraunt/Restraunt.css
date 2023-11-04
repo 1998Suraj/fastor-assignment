@@ -1,0 +1,140 @@
+/* Base styles for all devices */
+.your-taste-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+.your-taste-container b {
+  font-size: 24px;
+}
+
+.your-taste-container p {
+  color: #333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Style for the "your-taste-image-container" */
+.your-taste-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* Style for the "image-container" */
+.image-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  width: 10%; /* Set the width to 10% of the parent container's width */
+  height: 10%; /* Set the height to 10% of the parent container's height */
+}
+
+.images {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the "inner-image-container" */
+.inner-image-container {
+  margin-top: 10px;
+}
+
+.inner-image-container b {
+  font-size: 18px;
+  color: #333;
+}
+
+.inner-image-container p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media query for devices with a max-width of 768px (e.g., tablets and smaller screens) */
+@media (max-width: 768px) {
+  .your-taste-image-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+  flex: 0 0 100%; /* Full width for each image container in a single column layout */
+  }
+}
+
+
+/* Common styles for both desktop and mobile */
+.b {
+  font-size: 24px;
+  color: #333;
+}
+
+.popular-ones-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.popular-ones-container > div {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  width: 30%;
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.popular-ones-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.popular-ones-container b {
+  font-size: 18px;
+  color: #333;
+}
+
+.popular-ones-container p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.popular-ones-container > div > div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for mobile-specific elements */
+@media (max-width: 768px) {
+  /* Adjust fonts and spacing for mobile */
+  .b {
+    font-size: 20px;
+  }
+
+  .popular-ones-container {
+    margin-top: 10px;
+  }
+
+  .popular-ones-container > div {
+    padding: 8px;
+  }
+
+  .popular-ones-container b {
+    font-size: 16px;
+  }
+
+  .popular-ones-container p {
+    font-size: 12px;
+  }
+}

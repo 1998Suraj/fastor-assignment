@@ -1,0 +1,95 @@
+.mobile-number-container {
+  max-width: 500px;
+  padding-left: 34%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  flex-direction: column;
+}
+
+.mobile-number-container input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  background: #f7f8f9;
+}
+
+.mobile-number-container button {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #e5284b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background: #ff6d6a;
+  cursor: pointer;
+}
+
+.heading-line {
+  margin-top: 10px;
+  color: var(--dark, #1e232c);
+  font-family: Urbanist;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.26px;
+}
+
+.second-line {
+  color: var(--gray, #8391a1);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Media query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .mobile-number-container {
+    height: auto; /* Adjusting height for smaller screens */
+  }
+
+  .mobile-number-container input[type="text"] {
+    width: 100%;
+  }
+
+  .mobile-number-container button {
+    width: 100%;
+  }
+}
+
+/* Media query for even smaller screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .mobile-number-container {
+    padding: 5px; /* Adjusting padding for smaller screens */
+  }
+
+  .mobile-number-container input[type="text"] {
+    margin-bottom: 5px; /* Reducing margin for smaller screens */
+  }
+
+  .mobile-number-container button {
+    margin-top: 10px; /* Adjusting margin for smaller screens */
+  }
+
+  .heading-line {
+    font-size: 22px; /* Adjusting font size for smaller screens */
+  }
+
+  .second-line {
+    font-size: 14px; /* Adjusting font size for smaller screens */
+  }
+}
+
+
+
+
